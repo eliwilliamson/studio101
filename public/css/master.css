@@ -48,3 +48,9 @@ body {
 .landingNav h2 {
   font-weight: normal;
 }
+.footer {
+  background: #808080;
+}
+.footer .copyright {
+  text-align: center;
+}
