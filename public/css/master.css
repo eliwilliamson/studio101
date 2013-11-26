@@ -33,3 +33,18 @@ body {
   min-width: 100%;
   height: 500px;
 }
+.landingNav {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.landingNav .col-sm-3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.landingNav .col-sm-3 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.landingNav h2 {
+  font-weight: normal;
+}
