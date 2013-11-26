@@ -1,2 +1,13 @@
 .topNav
   position: absolute
+  z-index: 1
+  background: rgba(255,255,255,0.8)
+  border: none
+  .logo
+    height: 50px
+    width: 77px
+  .navbar-nav > li
+    > a
+      padding: 30px 20px
+    &.active > a, &.active > a:hover, > a:hover
+      background: orange
