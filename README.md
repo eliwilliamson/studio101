@@ -1,4 +1,7 @@
-studio101
-=========
+STUDIO 101 - MARKETING SITE
+===========================
+A marketing site for Studio 101
 
-Studio 101 - Marketing site
+### Staging/Production
+This site is staged at http://eliwilliamson.github.io/studio101
+This site isn't live yet.
