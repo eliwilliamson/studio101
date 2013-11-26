@@ -1,13 +1,24 @@
 .topNav
   position: absolute
-  z-index: 1
+  z-index: 10
   background: rgba(255,255,255,0.8)
   border: none
+  .navbar-brand
+    padding: 10px 15px
+  .navbar-toggle
+    margin-top: 16px
+    border-color: black
+    background: rgba(255,255,255,0.5)
+    &:hover
+      background: rgba(0,0,0,0.2)
+    .icon-bar
+      background: black
   .logo
     height: 50px
     width: 77px
   .navbar-nav > li
     > a
-      padding: 30px 20px
+      padding: 25px 20px
+      color: black
     &.active > a, &.active > a:hover, > a:hover
       background: orange
