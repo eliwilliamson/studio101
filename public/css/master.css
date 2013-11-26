@@ -7,6 +7,29 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-body {
-  padding: 50px;
+.topNav {
+  position: absolute;
+}
+.landingHero .carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+.landingHero .carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.landingHero .carousel-caption {
+  z-index: 10;
+}
+.landingHero .carousel-caption p {
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+.landingHero .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
 }
