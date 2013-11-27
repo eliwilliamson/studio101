@@ -4,40 +4,33 @@
       li.active(data-target='#myCarousel', data-slide-to='0')
       li(data-target='#myCarousel', data-slide-to='1')
       li(data-target='#myCarousel', data-slide-to='2')
+      li(data-target='#myCarousel', data-slide-to='3')
     .carousel-inner
-      .item.active
-        img(src='img/landing/carousel/about.jpg', alt='about')
+      .item.about.active
         .container
           .carousel-caption
             h1.decorative Hair with Style
             p Studio 101 is a premier salon proudly cutting, coloring, and styling Providence, Rhode Island.
             p
-              a.btn.btn-lg.btn-primary(href='about', role='button') Learn More
-      .item
-        img(src='img/landing/carousel/about.jpg', alt='about')
+              a.btn.btn-lg.btn-primary(href='/about', role='button') Who are we?
+      .item.services
         .container
           .carousel-caption
-            h1.decorative Hair with Style
-            p Studio 101 is a premier salon proudly cutting, coloring, and styling Providence, Rhode Island.
+            h1.decorative Service Done Right
+            p Whether you want your hair cut, colored, or curled, Studio 101 has you covered with a wide range of services.
             p
-              a.btn.btn-lg.btn-primary(href='about', role='button') Learn More
-      .item
-        img(src='img/landing/carousel/about.jpg', alt='about')
+              a.btn.btn-lg.btn-primary(href='/services', role='button') What do we do?
+      .item.products
         .container
           .carousel-caption
-            h1.decorative Hair with Style
-            p Studio 101 is a premier salon proudly cutting, coloring, and styling Providence, Rhode Island.
+            h1.decorative Top of the Line
+            p Take home exclusive products from the L'oreal Serie Expert line as well as Shu Uemura.
             p
-              a.btn.btn-lg.btn-primary(href='about', role='button') Learn More
-      .item
-        img(src='img/landing/carousel/about.jpg', alt='about')
+              a.btn.btn-lg.btn-primary(href='/products', role='button') What do we use?
+      .item.contact
         .container
           .carousel-caption
-            h1.decorative Hair with Style
-            p Studio 101 is a premier salon proudly cutting, coloring, and styling Providence, Rhode Island.
+            h1.decorative Get Started Now
+            p We assure you that we ARE the best in Rhode Island.
             p
-              a.btn.btn-lg.btn-primary(href='about', role='button') Learn More
-    a.left.carousel-control(href='#myCarousel', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left
-    a.right.carousel-control(href='#myCarousel', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right
+              a.btn.btn-lg.btn-primary(href='/contact', role='button') Make an appointment
