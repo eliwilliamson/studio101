@@ -7,6 +7,7 @@
     <meta name="author" content="author of the site">
     <title></title>
     <link href="http://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/master.css">
   </head>
@@ -14,17 +15,16 @@
 <div role="navigation" class="topNav navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Project name</a>
+      <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand"><img src="img/global/logo.png" alt="logo" class="logo"/></a>
     </div>
     <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <!--/.nav-collapse 
-    -->
   </div>
 </div>
 <div class="landingHero">
@@ -33,73 +33,83 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="item active"><img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide"/>
+      <div class="item about active">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Example headline.</h1>
-            <p>Note: If you're viewing this page via a<code>file://</code>URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-            <p><a href="#" role="button" class="btn btn-lg btn-primary">Sign up today</a></p>
+            <h1 class="decorative">Hair with Style</h1>
+            <p>Studio 101 is a premier salon proudly cutting, coloring, and styling Providence, Rhode Island.</p>
+            <p><a href="/about" role="button" class="btn btn-lg btn-primary">Who are we?</a></p>
           </div>
         </div>
       </div>
-      <div class="item"><img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide"/>
+      <div class="item services">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" role="button" class="btn btn-lg btn-primary">Learn more</a></p>
+            <h1 class="decorative">Service Done Right</h1>
+            <p>Whether you want your hair cut, colored, or curled, Studio 101 has you covered with a wide range of services.</p>
+            <p><a href="/services" role="button" class="btn btn-lg btn-primary">What do we do?</a></p>
           </div>
         </div>
       </div>
-      <div class="item"><img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide"/>
+      <div class="item products">
         <div class="container">
           <div class="carousel-caption">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" role="button" class="btn btn-lg btn-primary">Browse gallery</a></p>
+            <h1 class="decorative">Top of the Line</h1>
+            <p>Take home exclusive products from the L'oreal Serie Expert line as well as Shu Uemura.</p>
+            <p><a href="/products" role="button" class="btn btn-lg btn-primary">What do we use?</a></p>
           </div>
         </div>
       </div>
-    </div><a href="#myCarousel" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#myCarousel" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      <div class="item contact">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="decorative">Get Started Now</h1>
+            <p>We assure you that we ARE the best in Rhode Island.</p>
+            <p><a href="/contact" role="button" class="btn btn-lg btn-primary">Make an appointment</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="container landingNav">
   <div class="row">
-    <div class="col-sm-3"><img data-src="holder.js/140x140" alt="Generic placeholder image" class="img-circle"/>
-      <h2>Heading</h2>
+    <div class="col-sm-3"><img src="img/landing/nav/about.jpg" alt="about" class="img-circle"/>
+      <h2 class="decorative">Who Are We?</h2>
       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p class="visible-xs"><a href="#" role="button" class="btn btn-default">View details »</a></p>
+      <p class="visible-xs"><a href="#" role="button" class="btn btn-arrow">Learn about us</a></p>
     </div>
-    <div class="col-sm-3"><img data-src="holder.js/140x140" alt="Generic placeholder image" class="img-circle"/>
-      <h2>Heading</h2>
+    <div class="col-sm-3"><img src="img/landing/nav/services.jpg" alt="services" class="img-circle"/>
+      <h2 class="decorative">What We Do?</h2>
       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p class="visible-xs"><a href="#" role="button" class="btn btn-default">View details »</a></p>
+      <p class="visible-xs"><a href="#" role="button" class="btn btn-arrow">View our services</a></p>
     </div>
-    <div class="col-sm-3"><img data-src="holder.js/140x140" alt="Generic placeholder image" class="img-circle"/>
-      <h2>Heading</h2>
+    <div class="col-sm-3"><img src="img/landing/nav/products.jpg" alt="products" class="img-circle"/>
+      <h2 class="decorative">What We Use?</h2>
       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p class="visible-xs"><a href="#" role="button" class="btn btn-default">View details »</a></p>
+      <p class="visible-xs"><a href="#" role="button" class="btn btn-arrow">Peruse our products</a></p>
     </div>
-    <div class="col-sm-3"><img data-src="holder.js/140x140" alt="Generic placeholder image" class="img-circle"/>
-      <h2>Heading</h2>
+    <div class="col-sm-3 get-in-touch"><img src="img/landing/nav/contact.jpg" alt="contact" class="img-circle"/>
+      <h2 class="decorative">Get In Touch</h2>
       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p class="visible-xs"><a href="#" role="button" class="btn btn-default">View details »</a></p>
+      <p class="visible-xs"><a href="#" role="button" class="btn btn-arrow">Schedule an appointmet</a></p>
     </div>
   </div>
   <div class="row hidden-xs">
     <div class="col-sm-3">
-      <p><a href="#" role="button" class="btn btn-default">View details »</a></p>
+      <p><a href="#" role="button" class="btn btn-arrow">Learn about us</a></p>
     </div>
     <div class="col-sm-3">
-      <p><a href="#" role="button" class="btn btn-default">View details »</a></p>
+      <p><a href="#" role="button" class="btn btn-arrow">View our services</a></p>
     </div>
     <div class="col-sm-3">
-      <p><a href="#" role="button" class="btn btn-default">View details »</a></p>
+      <p><a href="#" role="button" class="btn btn-arrow">Peruse our products</a></p>
     </div>
-    <div class="col-sm-3">
-      <p><a href="#" role="button" class="btn btn-default">View details »</a></p>
+    <div class="col-sm-3 get-in-touch">
+      <p><a href="#" role="button" class="btn btn-arrow">Schedule an appointment</a></p>
     </div>
   </div>
 </div>
@@ -107,14 +117,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="col-sm-4">
-              <h2>hello</h2>
+            <div class="col-sm-4 visible-md visible-lg"><img src="img/global/logo.png" alt="logo" class="logo">
+              <p>Studio 101 is an upscale salon featuring the latest hair styles, trends and coloring techniques. Our technicians are trained and ready to cut, style or compliment your hair.<span class="social-links">View us online:<a href="https://www.facebook.com/Studio101RI"><i class="facebook"></i></a><a href="https://www.instagram.com/"><i class="instagram"></i></a></span></p>
             </div>
             <div class="col-sm-4">
-              <h2>hello</h2>
+              <h2 class="decorative">Get in Touch</h2>
+              <h3 class="odd"><span class="moduleLabel">Address</span><span class="moduleDescription">101 Orange Street, Providence, RI 02903</span></h3>
+              <h3><span class="moduleLabel">Telephone</span><span class="moduleDescription">(401) 808-6777</span></h3>
+              <h3 class="odd"><span class="moduleLabel">Email</span><span class="moduleDescription"><a href="mailto:info@studio101ri.com" class="link">info@studio101ri.com</a></span></h3>
             </div>
             <div class="col-sm-4">
-              <h2>hello</h2>
+              <h2 class="decorative">Hours of Operation</h2>
+              <h3 class="odd"><span class="moduleLabel">Monday</span><span class="moduleDescription">Closed</span></h3>
+              <h3><span class="moduleLabel">Tuesday</span><span class="moduleDescription">10:00 AM - 8:00 PM</span></h3>
+              <h3 class="odd"><span class="moduleLabel">Wednesday</span><span class="moduleDescription">10:00 AM - 8:00 PM</span></h3>
+              <h3><span class="moduleLabel">Thursday</span><span class="moduleDescription">10:00 AM - 8:00 PM</span></h3>
+              <h3 class="odd"><span class="moduleLabel">Friday</span><span class="moduleDescription">10:00 AM - 8:00 PM</span></h3>
+              <h3><span class="moduleLabel">Saturday</span><span class="moduleDescription">10:00 AM - 6:00 PM</span></h3>
+              <h3 class="odd"><span class="moduleLabel">Sunday</span><span class="moduleDescription">Closed</span></h3>
             </div>
           </div>
         </div>
