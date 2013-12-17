@@ -1,4 +1,5 @@
 .footer
+  clear both
   background light-grey
   .col-sm-4
     margin-top 3em
@@ -41,3 +42,23 @@
     font-size 14px
     text-align right
     font-style italic
+  .social-links
+    opacity 0.5
+    display block
+    margin-top 10px
+    .facebook, .instagram
+      color black
+      font-family iconography
+      font-style normal
+      font-size 18px
+      padding-left 10px
+      opacity 0.5
+      transition opacity 200ms linear
+      &:hover
+        opacity 0.8
+    .facebook
+      &:before
+        content "\f09a"
+    .instagram
+      &:before
+        content "\f16d"
