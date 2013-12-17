@@ -2,3 +2,4 @@
 #= require "_jquery.js"
 #= require "_bootstrap.js"
 #= require "_holder.js"
+#= require "_stickyDiv.js"
