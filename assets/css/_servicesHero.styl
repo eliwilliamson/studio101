@@ -1,0 +1,43 @@
+.servicesHero
+  .carousel
+    height 575px
+    margin-bottom 60px
+    overflow hidden
+    @media (max-width: 768px)
+      height 485px
+  .item
+    height 575px
+    background-position top center
+    background-size cover
+    background-repeat no-repeat
+    &.cuts
+      background-image url('../img/services/carousel/cuts.jpg')
+    &.styles
+      background-image url('../img/services/carousel/styles.jpg')
+    &.blowdrys
+      background-image url('../img/services/carousel/blowdrys.jpg')
+    &.colors
+      background-image url('../img/services/carousel/colors.jpg')
+  .carousel-caption
+    z-index 9
+    background linear-gradient(top, rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0))
+    width 100%
+    left 0
+    top 70px
+    h1 
+      font-size 90px
+      margin: 1.4em 0 -20px 0;
+      @include text-shadow(1px 1px 1px rgba(0,0,0, 0.35))
+      @media (max-width: 768px)
+        font-size: 3.5em;
+        margin: 1.3em 0 -0.2em 0;
+    p
+      margin 20px auto
+      font-size 16px
+      line-height 1.4
+      max-width 450px
+      text-shadow 0 1px 3px black
+      font-weight 600
+      line-height 25px
+      @media (max-width: 768px)
+        max-width 90%
