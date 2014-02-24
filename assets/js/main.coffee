@@ -3,3 +3,5 @@
 #= require "_bootstrap.js"
 #= require "_holder.js"
 #= require "_stickyDiv.js"
+#= require "_tumblr.js"
+#= require "_twitterFeed.js"
