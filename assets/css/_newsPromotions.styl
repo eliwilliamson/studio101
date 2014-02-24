@@ -3,12 +3,19 @@
   padding-right 15px
   margin-top 150px
   margin-bottom 200px
+  @media (max-width: 768px)
+    margin-top -40px
+    margin-bottom 40px
   a
     color orange
     text-decoration underline
   .col-sm-4
     text-align left
     display inline-block
+    @media (max-width: 768px)
+      margin-bottom 30px
+      padding-left 30px
+      padding-right 30px
     .post
       p
         margin 0
@@ -22,11 +29,17 @@
       background-repeat no-repeat
       background-position left top
       background-size auto 100%
-    &.latestNews h1
-      background-image url('../img/landing/icons/news.svg')
-      background-size auto 90%
-    &.currentPromotions h1
-      background-image url('../img/landing/icons/promos.svg')
+    &.latestNews
+      h1
+        background-image url('../img/landing/icons/news.svg')
+        background-size auto 90%
+      @media (min-width: 768px) and (max-width: 992px)
+        width 50%
+    &.currentPromotions
+      h1
+        background-image url('../img/landing/icons/promos.svg')
+      @media (min-width: 768px) and (max-width: 992px)
+        width 50%
     &.twitter
       h1
         padding-left 35px
@@ -51,3 +64,5 @@
           font-size 10px
           margin 0
           color lighten(dark-grey, 50%)
+      @media (max-width: 992px)
+        display none
