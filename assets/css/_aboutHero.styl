@@ -9,7 +9,7 @@
     overflow hidden
     background-position bottom left
     background-repeat no-repeat
-    &.breanna img
+    img
       height 400px
       width auto
   .carousel-caption
@@ -101,6 +101,7 @@
         margin -23px -2% 0 -2%
         padding 0
         text-indent 0
+        text-align center
         border none
         overflow hidden
         height 100%
@@ -119,11 +120,17 @@
         @media (max-width: 790px)
           margin-left 0
       img
-        width 100%
-        height auto
-        @media (max-width: 790px)
-          height 100px
-          width auto
+        width auto
+        height 100px
+        &.kristen
+          position relative
+          right -6%
+        &.lori, &.taylor, &.greg
+          position relative
+          left -6%
+        &.katie
+          position relative
+          left -4%
   hr
     border 0
     height 1px

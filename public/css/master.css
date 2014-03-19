@@ -918,7 +918,7 @@ body {
   background-position: bottom left;
   background-repeat: no-repeat;
 }
-.aboutHero .item.breanna img {
+.aboutHero .item img {
   height: 400px;
   width: auto;
 }
@@ -1061,6 +1061,7 @@ body {
   margin: -23px -2% 0 -2%;
   padding: 0;
   text-indent: 0;
+  text-align: center;
   border: none;
   overflow: hidden;
   height: 100%;
@@ -1105,14 +1106,22 @@ body {
   }
 }
 .aboutHero .talent-thumbnails .carousel-indicators img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100px;
 }
-@media (max-width: 790px) {
-  .aboutHero .talent-thumbnails .carousel-indicators img {
-    height: 100px;
-    width: auto;
-  }
+.aboutHero .talent-thumbnails .carousel-indicators img.kristen {
+  position: relative;
+  right: -6%;
+}
+.aboutHero .talent-thumbnails .carousel-indicators img.lori,
+.aboutHero .talent-thumbnails .carousel-indicators img.taylor,
+.aboutHero .talent-thumbnails .carousel-indicators img.greg {
+  position: relative;
+  left: -6%;
+}
+.aboutHero .talent-thumbnails .carousel-indicators img.katie {
+  position: relative;
+  left: -4%;
 }
 .aboutHero hr {
   border: 0;
