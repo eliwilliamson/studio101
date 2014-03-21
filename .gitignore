@@ -1,2 +1,4 @@
 public/.DS_Store
 public/img/about/.DS_Store
+public/node_modules
+node_modules/

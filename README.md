@@ -1,20 +1,18 @@
-STUDIO 101 - MARKETING SITE
+Studio 101 Website
 ===========================
-A marketing site for Studio 101
+Here is how to get up and running on a localserver (you can always view a static version of the site in the "public" folder)
 
-### Staging/Production
-This site is staged at http://eliwilliamson.github.io/studio101
-This site isn't live yet.
+#### The site can be previewed at [here](http://eliwilliamson.github.io/studio101/public/index.html).
 
 
-## Update Site
+## To Get Up & Running
+******************************
+1. Install [roots v.2.1.0](https://github.com/jenius/roots)
 
-News & Promotions -- Tumblr
+2. Navigate to the project's root directory
 
-1. Go to tumblr.com
-2. Login
-  U: studio101ri@gmail.com
-  P: 8086777
-3. Click "posts" at the top of the right sidebar
-4. Click the gear under the post and choose "Edit" from the dropdown
-5. Edit the section body (NOTE: DO NOT EDIT THE TITLE)
+3. Run `npm install`
+
+4. Run `roots watch`
+
+5. Start editing code
