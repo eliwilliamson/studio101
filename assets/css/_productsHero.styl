@@ -1,9 +1,27 @@
 .productsHero
+  ol
+    list-style none
+    @media (max-width: 480px)
+      margin 0
+      overflow hidden
+      -webkit-margin-before 0
+      -webkit-margin-after 0
+      -webkit-padding-start 0
+      box-sizing border-box
+      padding 40px 20px
+  .toggle
+    @media (max-width: 480px)
+      display none  
+  #myCarousel
+    @media (max-width: 480px)
+      margin-top 70px
   .item
     height 575px
     background-position top center
     background-size cover
     background-repeat no-repeat
+    @media (max-width: 480px)
+      display none
     &.shu
       background-image url('../img/products/shu-hero.jpg')
       background-position top right

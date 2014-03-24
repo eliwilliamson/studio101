@@ -597,6 +597,34 @@ body {
     display: none;
   }
 }
+.productsHero ol {
+  list-style: none;
+}
+@media (max-width: 480px) {
+  .productsHero ol {
+    margin: 0;
+    overflow: hidden;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .productsHero .toggle {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .productsHero #myCarousel {
+    margin-top: 70px;
+  }
+}
 .productsHero .item {
   height: 575px;
   background-position: top center;
@@ -606,6 +634,11 @@ body {
   -ms-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 480px) {
+  .productsHero .item {
+    display: none;
+  }
 }
 .productsHero .item.shu {
   background-image: url("../img/products/shu-hero.jpg");
@@ -905,18 +938,51 @@ body {
     max-width: 90%;
   }
 }
+@media (max-width: 600px) {
+  .aboutHero {
+    margin-top: 30px;
+  }
+}
 .aboutHero .carousel {
   height: 621px;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  .aboutHero .carousel {
+    height: 900px;
+  }
+}
 .aboutHero .carousel-inner {
   height: 100%;
+}
+@media (max-width: 600px) {
+  .aboutHero .carousel-inner {
+    position: static;
+    display: block;
+  }
 }
 .aboutHero .item {
   height: 520px;
   overflow: hidden;
   background-position: bottom left;
   background-repeat: no-repeat;
+}
+@media (max-width: 600px) {
+  .aboutHero .item {
+    height: 800px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutHero .item {
+    height: auto;
+    display: block;
+    position: static;
+    clear: both;
+  }
+  .aboutHero .item .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .aboutHero .item img {
   height: 400px;
@@ -969,6 +1035,19 @@ body {
     opacity: 0.1;
   }
 }
+@media (max-width: 600px) {
+  .aboutHero .carousel-caption {
+    position: static;
+    display: block;
+  }
+  .aboutHero .carousel-caption .row {
+    position: relative;
+  }
+  .aboutHero .carousel-caption .col-md-4 {
+    position: absolute;
+    bottom: -20px;
+  }
+}
 .aboutHero .carousel-caption h1 {
   color: #ef832e;
   font-size: 40px;
@@ -1013,6 +1092,11 @@ body {
   position: absolute;
   top: 543px;
   width: 100%;
+}
+@media (max-width: 600px) {
+  .aboutHero .talent-thumbnails {
+    display: none;
+  }
 }
 .aboutHero .talent-thumbnails h1 {
   font-size: 45px;
@@ -1160,11 +1244,28 @@ body {
   margin-right: -70px;
   margin-top: 17px;
 }
+@media (max-width: 600px) {
+  .aboutAwards img.projo {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
 .aboutAwards img.allure {
   margin-top: 20px;
 }
+@media (max-width: 600px) {
+  .aboutAwards img.allure {
+    margin-top: 30px;
+  }
+}
 .aboutAwards img.style-week {
   margin-left: -70px;
+}
+@media (max-width: 600px) {
+  .aboutAwards img.style-week {
+    margin: auto;
+    margin-top: 20px;
+  }
 }
 .servicesBreakdown {
   padding: 0 15px 60px 15px;
@@ -1337,13 +1438,21 @@ body {
   vertical-align: middle;
   width: 250px;
 }
+@media (max-width: 480px) {
+  .map-wrapper .row .pin p {
+    text-align: center;
+    top: -30px;
+    left: -20px;
+  }
+}
 .map-wrapper .row .pin p span {
   position: relative;
   left: 100px;
 }
 @media (max-width: 480px) {
   .map-wrapper .row .pin p span {
-    display: none;
+    top: 150px;
+    left: -36px;
   }
 }
 .map-wrapper #map {
@@ -1377,6 +1486,17 @@ body {
   text-align: center;
   font-size: 0.75em;
   color: #a5a5a5;
+}
+@media (max-width: 600px) {
+  .footer .email {
+    position: relative;
+    left: -30px;
+  }
+}
+@media (max-width: 320px) {
+  .footer .email {
+    left: -20px;
+  }
 }
 .footer h2 {
   font-weight: normal;

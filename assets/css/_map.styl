@@ -29,11 +29,16 @@
         background-size contain
         vertical-align middle
         width 250px
+        @media (max-width: 480px)
+          text-align center
+          top -30px
+          left -20px
         span
           position relative
           left 100px
           @media (max-width: 480px)
-            display none
+            top 150px
+            left -36px
   #map
     width 120%
     margin 0 -10%

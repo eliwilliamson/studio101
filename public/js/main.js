@@ -2620,6 +2620,17 @@ h[a]+'" class="twitter_fav_icon">Favorite</a></p>');c.push(b);a++}if(null==w){e=
 twitterFetcher.fetch('437773980632510464', 'twitter', 1, true);
 
 (function() {
-
+  $(document).ready(function() {
+    var aboutCarousel, productIndicators, screen;
+    screen = $(window);
+    aboutCarousel = $(".aboutHero #myCarousel");
+    productIndicators = $(".productsHero .carousel-indicators");
+    if (screen.width() < 600) {
+      aboutCarousel.removeAttr("id");
+      aboutCarousel.removeAttr("class");
+      productIndicators.removeAttr("class");
+      return aboutCarousel.removeAttr("data-ride");
+    }
+  });
 
 }).call(this);
