@@ -1574,3 +1574,8 @@ body {
 .footer .social-links .twitter:before {
   content: "\f099";
 }
+@media (max-width: 768px) {
+  body {
+    display: none;
+  }
+}
