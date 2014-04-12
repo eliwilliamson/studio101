@@ -1,4 +1,4 @@
-!!!
+doctype html
 html
   head
     title Studio 101 | Hair Salon in Providence, Rhode Island
@@ -20,8 +20,14 @@ html
     link(rel='stylesheet', href='css/bootstrap.css')
     link(rel='stylesheet', href='css/master.css')
   body
-    != content
+    block content
 
     include _footer
-
+  
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.js')
+    script(src='js/holder.js')
+    script(src='js/stickyDiv.js')
+    script(src='js/tumblr.js')
+    script(src='js/twitterFeed.js')
     script(src='js/main.js')

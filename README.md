@@ -7,7 +7,7 @@ Here is how to get up and running on a localserver (you can always view a static
 
 ## To Get Up & Running
 ******************************
-1. Install [roots v.2.1.0](https://github.com/jenius/roots)
+1. Install [node.js](http://nodejs.org/)
 
 2. Navigate to the project's root directory
 
