@@ -1069,13 +1069,13 @@ body {
   position: relative;
   right: -6%;
 }
+.aboutHero .talent-thumbnails .carousel-indicators img.katie,
 .aboutHero .talent-thumbnails .carousel-indicators img.lori,
-.aboutHero .talent-thumbnails .carousel-indicators img.taylor,
 .aboutHero .talent-thumbnails .carousel-indicators img.greg {
   position: relative;
   left: -6%;
 }
-.aboutHero .talent-thumbnails .carousel-indicators img.katie {
+.aboutHero .talent-thumbnails .carousel-indicators img.taylor {
   position: relative;
   left: -4%;
 }
