@@ -695,9 +695,12 @@ body {
 .productsHero .carousel-indicators li .product-list {
   opacity: 0;
   height: 0;
-  display: block;
+  display: none;
   -webkit-transition: opacity 500ms ease-in, height 500ms ease-in;
   transition: opacity 500ms ease-in, height 500ms ease-in;
+}
+.productsHero .carousel-indicators li.active .product-list {
+  display: block;
 }
 .productsHero .carousel-indicators li .logo {
   height: 40px;
@@ -986,8 +989,11 @@ body {
 }
 .aboutHero .talent-thumbnails h1 {
   font-size: 45px;
-  max-width: 33%;
-  margin-top: -100px;
+  position: absolute;
+  top: -25px;
+  z-index: 1;
+  width: 245px;
+  padding-right: 0;
   color: #ddd;
 }
 @media (max-width: 1200px) {
@@ -1027,7 +1033,7 @@ body {
 }
 .aboutHero .talent-thumbnails .carousel-indicators li {
   background-color: transparent;
-  width: 10%;
+  width: 11.5%;
   margin: -23px -2% 0 -2%;
   padding: 0;
   text-indent: 0;
@@ -1065,15 +1071,21 @@ body {
   width: auto;
   height: 100px;
 }
+.aboutHero .talent-thumbnails .carousel-indicators img.steph {
+  position: relative;
+  right: -3%;
+}
 .aboutHero .talent-thumbnails .carousel-indicators img.kristen {
   position: relative;
   right: -6%;
 }
-.aboutHero .talent-thumbnails .carousel-indicators img.katie,
-.aboutHero .talent-thumbnails .carousel-indicators img.lori,
 .aboutHero .talent-thumbnails .carousel-indicators img.greg {
   position: relative;
   left: -6%;
+}
+.aboutHero .talent-thumbnails .carousel-indicators img.katie {
+  position: relative;
+  left: -8%;
 }
 .aboutHero .talent-thumbnails .carousel-indicators img.taylor {
   position: relative;

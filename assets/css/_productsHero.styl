@@ -112,8 +112,10 @@
       .product-list
         opacity 0
         height 0
-        display block
+        display none
         transition opacity 500ms ease-in, height 500ms ease-in
+      &.active .product-list
+        display block
       .logo 
         height 40px
         width auto

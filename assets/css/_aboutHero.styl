@@ -101,8 +101,11 @@
       display none
     h1 
       font-size 45px
-      max-width 33%
-      margin-top -100px
+      position absolute
+      top -25px
+      z-index 1
+      width 245px
+      padding-right 0
       color lighten(dark-grey, 60)
       @media (max-width: 1200px)
         font-size 40px
@@ -124,7 +127,7 @@
       height 100px
       li
         background-color transparent
-        width 10%
+        width 11.5%
         margin -23px -2% 0 -2%
         padding 0
         text-indent 0
@@ -149,12 +152,18 @@
       img
         width auto
         height 100px
+        &.steph
+          position relative
+          right -3%
         &.kristen
           position relative
           right -6%
-        &.katie, &.lori, &.greg
+        &.greg
           position relative
           left -6%
+        &.katie
+          position relative
+          left -8%
          &.taylor
           position relative
           left -4%
