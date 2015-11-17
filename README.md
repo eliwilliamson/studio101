@@ -1,18 +1,17 @@
-Studio 101 Website
-===========================
-Here is how to get up and running on a localserver (you can always view a static version of the site in the "public" folder)
-
-#### The site can be previewed at [here](http://eliwilliamson.github.io/studio101/public/index.html).
+# studio101
 
 
-## To Get Up & Running
-******************************
-1. Install [node.js](http://nodejs.org/)
 
-2. Navigate to the project's root directory
+### Setup
 
-3. Run `npm install`
+- make sure [node.js](http://nodejs.org) and [roots](http://roots.cx) are installed
+- clone this repo down and `cd` into the folder
+- run `npm install`
+- run `roots watch`
+- ???
+- get money
 
-4. Run `roots watch`
+### Deploying
 
-5. Start editing code
+- If you just want to compile the production build, run `roots compile -e production` and it will build to public.
+- To deploy your site with a single command, run `roots deploy -to XXX` with `XXX` being whichever [ship](https://github.com/carrot/ship#usage) deployer you want to use.
